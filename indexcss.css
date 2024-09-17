@@ -48,7 +48,7 @@ nav ul {
 nav ul li {
     height:30px;
     background-color: rgb(0, 0, 0);  /* Cor de fundo dos itens */
-         /* Cor do texto dos itens */
+    color:#51ec08;     /* Cor do texto dos itens */
     margin: 0;                         /* Remove a margem para garantir que o fundo ocupe a largura */
     padding:40px;                /* Adiciona espaçamento interno */
     display: flex;                     /* Faz com que o item se comporte como um container flexível */
@@ -73,24 +73,17 @@ main {
     padding:15px;
 }
 
-#direita{
-    width:60%;
-}
-
-#left{
-    width:40%;
-}
-
-#Banner{
+#Banner {
     display:flex;
-    flex-direction: column;
+    justify-content:space-around;
    
 }
 
 #Espec {
     display:flex;
     align-items:center;
-    justify-content:center;
+    justify-content:space-around;
+    margin:200px;
 }
 
 
@@ -132,8 +125,10 @@ footer {
 
 Button {
     background-color:#51ec08;
-    border-bottom-width: thin;
-    flex-direction: inline;
+    padding:20px;
+    padding-left:45px;
+    padding-right:45px;
+    flex-direction: row;
     display:flex;
     border-radius:4px;
 }
