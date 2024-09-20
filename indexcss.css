@@ -76,14 +76,18 @@ main {
 #Banner {
     display:flex;
     justify-content:space-around;
-   
+    align-items:center;
 }
 
-#Espec {
+#Espec h1 {
     display:flex;
     align-items:center;
     justify-content:space-around;
     margin:200px;
+}
+
+#Espec{
+    display:grid;
 }
 
 
@@ -117,13 +121,13 @@ p {
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content:flex-end;
     align-items: center;       
 }
 
 
 
-Button {
+header Button {
     background-color:#51ec08;
     padding:20px;
     padding-left:45px;
@@ -133,7 +137,33 @@ Button {
     border-radius:4px;
 }
 
-Button:hover {
+header Button:hover {
     Background-color:rgb(0, 0, 0);
     color:#51ec08;
 }
+
+.sbutton {
+    display:none;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:880px) {
+    nav {
+        display:none;
+    }
+    header button {
+        display:none;
+    }
+    .sbutton {
+        width:13vw;
+        display:flex;
+        justify-content:flex-end;
+        color:#51ec08
+    }
+ }
