@@ -1,3 +1,12 @@
+*{
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+
+}
+
+
+
+
 header {
     display: flex;
     align-items: center;
@@ -79,17 +88,24 @@ main {
     align-items:center;
 }
 
+#Espec {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
 #Espec h1 {
     display:flex;
     align-items:center;
     justify-content:space-around;
-    margin:200px;
+    margin-top:150px;
 }
 
-#Espec{
-    display:grid;
+#Espec h2 {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
 }
-
 
 nav ul li:hover a{
     color:rgb(0, 0, 0);
@@ -110,6 +126,10 @@ body {
 
 h1 {
     color: #51ec08;
+}
+
+h2 {
+    color:#51ec08;
 }
 
 
