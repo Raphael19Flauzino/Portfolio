@@ -88,23 +88,37 @@ main {
     align-items:center;
 }
 
+
 #Espec {
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto; /* Uma linha para cada elemento */
+    grid-template-columns:3fr; /* Uma coluna */
+    align-items: center; /* Centraliza os itens verticalmente */
+    text-align: center; /* Centraliza o texto */
+    max-width: 420px; /* Largura máxima do container */
+    margin: auto; /* Centraliza o container na página */
 }
 
 #Espec h1 {
-    display:flex;
-    align-items:center;
-    justify-content:space-around;
-    margin-top:150px;
+    margin-top: 50px; /* Margem superior para o título */
 }
 
 #Espec h2 {
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
+    margin: 10px 0; /* Margens para o subtítulo */
+}
+
+#Espec img {
+    justify-self:center ;
+    max-width: 100%; /* Garante que a imagem não exceda a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.text-container p {
+    padding: 15px;
+    border: 1px solid; /* Borda do quadrado */
+    border-radius: 5px; /* Bordas arredondadas */
+    width: 100%; /* Ocupa toda a largura do container */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
 }
 
 nav ul li:hover a{
