@@ -1,0 +1,287 @@
+*{
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+
+}
+
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000000;
+    padding:20px;
+
+}
+
+
+
+header img {
+    border-radius: 50%;
+    width:270px;
+    height:220px;
+    padding:10px
+}
+
+
+
+header h1 {
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding:10px;
+}
+
+
+
+nav {
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;            /* Centraliza os itens no container */
+}
+
+
+
+nav ul li {
+    height:30px;
+    background-color: rgb(0, 0, 0);  /* Cor de fundo dos itens */
+    color:#51ec08;     /* Cor do texto dos itens */
+    margin: 0;                         /* Remove a margem para garantir que o fundo ocupe a largura */
+    padding:40px;                /* Adiciona espaçamento interno */
+    display: flex;                     /* Faz com que o item se comporte como um container flexível */
+    justify-content: center;           /* Centraliza o conteúdo dentro do item */
+    align-items: center;                /* Alinha verticalmente o conteúdo */
+}
+
+
+
+nav ul li a{
+    text-decoration:none;
+    color:#51ec08;
+    display:block;
+    padding:40px;
+
+}
+
+main {
+    display: grid;
+    justify-content:center;
+    align-items:center;
+    padding:15px;
+}
+
+#Banner img {
+    width:850px;
+    height:450px;
+}
+
+#Banner {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+
+#Espec {
+    display: grid;
+    grid-template-rows: auto auto auto auto; /* Uma linha para cada elemento */
+    grid-template-columns:3fr; /* Uma coluna */
+    align-items: center; /* Centraliza os itens verticalmente */
+    text-align: center; /* Centraliza o texto */
+    max-width: 420px; /* Largura máxima do container */
+    margin: auto; /* Centraliza o container na página */
+}
+
+#Espec h1 {
+    margin-top: 50px; /* Margem superior para o título */
+}
+
+#Espec h2 {
+    margin: 10px 0; /* Margens para o subtítulo */
+}
+
+#Espec img {
+    justify-self:center ;
+    max-width: 100%; /* Garante que a imagem não exceda a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.text-container p {
+    padding: 15px;
+    border: 1px solid; /* Borda do quadrado */
+    border-radius: 5px; /* Bordas arredondadas */
+    width: 100%; /* Ocupa toda a largura do container */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+}
+
+#SobreM {
+    display:flex;
+    align-items:center;
+}
+
+#SobreM p {
+    margin:25px;
+}
+
+#SobreM img {
+    width:600px;
+    height:350px
+}
+
+nav ul li:hover a{
+    color:rgb(0, 0, 0);
+    background-color:#51ec08;
+}
+
+main img {
+    width: 400px;
+
+}
+
+
+body {
+    background-color: #000000;
+}
+
+
+
+h1 {
+    color: #51ec08;
+}
+
+h2 {
+    color:#51ec08;
+}
+
+
+
+p {
+    color:#51ec08;
+}
+
+
+footer {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;       
+}
+
+
+
+header Button {
+    background-color:#51ec08;
+    padding:20px;
+    padding-left:45px;
+    padding-right:45px;
+    flex-direction: row;
+    display:flex;
+    border-radius:4px;
+}
+
+header Button:hover {
+    Background-color:rgb(0, 0, 0);
+    color:#51ec08;
+}
+
+.sbutton {
+    display:none;
+}
+
+.curriculo {
+    display:flex;
+    align-items:center;
+    padding-top: 100px;
+    width: "18rem";
+}
+
+
+
+
+
+
+
+/* Estilos para telas pequenas */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column; /* Alinha itens verticalmente */
+        align-items: center; /* Centraliza os itens */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    header img {
+        width: 80%; /* Ajusta a imagem do cabeçalho */
+        max-width: 200px; /* Define um tamanho máximo */
+    }
+
+    nav ul {
+        flex-direction: column; /* Muda o layout para coluna */
+        padding: 0; /* Remove padding */
+        width: 100%; /* Ocupa toda a largura */
+    }
+
+    nav ul li {
+        padding: 10px; /* Reduz o padding para melhor visualização */
+        width: 100%; /* Faz os itens ocuparem toda a largura */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    #Banner img {
+        width: 100%; /* Garante que a imagem do banner ocupe 100% */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    #SobreM {
+        flex-direction: column; /* Muda a direção para coluna */
+        align-items: center; /* Centraliza itens */
+    }
+
+    #SobreM img {
+        width: 100%; /* Faz a imagem ocupar 100% */
+        max-width: 300px; /* Define um tamanho máximo */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .text-container p {
+        padding: 10px; /* Ajusta o padding para melhor visualização */
+        width: auto; /* Permite que o texto ocupe a largura disponível */
+    }
+
+    footer {
+        flex-direction: column; /* Alinha itens verticalmente */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    footer img {
+        width: 50px; /* Tamanho fixo dos ícones */
+        margin: 5px; /* Espaçamento entre os ícones */
+    }
+}
+
+
+
+
+/* Estilos para telas médias */
+@media screen and (max-width: 880px) {
+    nav {
+        display: none; /* Oculta o menu padrão em telas menores */
+    }
+
+    .sbutton {
+        display: flex; /* Mostra o botão hamburguer */
+        justify-content: flex-end; /* Alinha à direita */
+        color: #51ec08;
+        width: 20%; /* Largura do botão */
+    }
+}
